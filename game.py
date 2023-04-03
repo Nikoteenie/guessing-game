@@ -2,10 +2,15 @@
 # Put your code here
 import random
 
-random_number = random.randint(1, 100)
-
 name = input("What's your name? ")
-print(f"{name}, I'm thnking of a number between 1 and 100.")
+print("Let's play a gessing game")
+
+low = int(input("Select the lowest number in the range: "))
+high = int(input("Select the highest number in the range: "))
+
+random_number = random.randint(low, high)
+
+print(f"Great{name}, I'm thnking of a number between {low} and {high}.")
 print("Try to guess my number.")
 
 guess = int(input("Your guess? "))
